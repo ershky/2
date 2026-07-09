@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sachin | Premium Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#00eaff;
+    filter:blur(180px);
+    top:-100px;
+    left:-100px;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#8b5cf6;
+    filter:blur(180px);
+    bottom:-100px;
+    right:-100px;
+    z-index:-1;
+}
+
+
+/* Navbar */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+}
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+.logo{
+
+    font-size:32px;
+    font-weight:800;
+    color:#00eaff;
+
+}
+
+
+nav ul{
+
+    display:flex;
+    gap:30px;
+    list-style:none;
+
+}
+
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+
+nav ul li a:hover{
+
+    color:#00eaff;
+
+}
+
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:120px 8% 50px;
+
+}
+
+
+.hero-text{
+
+    max-width:600px;
+
+}
+
+
+.hero-text h3{
+
+    font-size:25px;
+
+}
+
+
+.hero-text h1{
+
+    font-size:75px;
+
+    background:linear-gradient(90deg,#00eaff,#8b5cf6);
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+
+.hero-text h2{
+
+    font-size:35px;
+
+    margin:15px 0;
+
+}
+
+
+#typing{
+
+    color:#00eaff;
+
+}
+
+
+.hero-text p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin:20px 0;
+
+}
+
+
+.buttons a{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    border-radius:30px;
+
+    margin-right:15px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+.btn{
+
+    background:#00eaff;
+
+    color:#000;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+.btn2{
+
+    border:2px solid #00eaff;
+
+    color:white;
+
+}
+
+
+/* Social */
+
+.social{
+
+    margin-top:30px;
+
+}
+
+
+.social a{
+
+    color:white;
+
+    font-size:25px;
+
+    margin-right:20px;
+
+    transition:.3s;
+
+}
+
+
+.social a:hover{
+
+    color:#00eaff;
+
+}
+
+
+/* Profile */
+
+.hero-img{
+
+    position:relative;
+
+}
+
+
+.hero-img img{
+
+    width:350px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #00eaff;
+
+    animation:float 4s infinite ease-in-out;
+
+}
+
+
+@keyframes float{
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+Sachin
+</div>
+
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+<h3>Hello 👋 I'm</h3>
+
+<h1>Sachin</h1>
+
+<h2>
+<span id="typing"></span>
+</h2>
+
+
+<p>
+
+I create modern, responsive and beautiful websites with clean code and creative designs.
+
+</p>
+
+
+<div class="buttons">
+
+<a href="#contact" class="btn">
+Hire Me
+</a>
+
+<a href="#" class="btn2">
+Download CV
+</a>
+
+</div>
+
+
+<div class="social">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="hero-img">
+
+<img src="https://via.placeholder.com/350" alt="Sachin">
+
+</div>
+
+
+</section>
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+<div class="section-title">
+<h1>About Me</h1>
+</div>
+
+
+<div class="glass about-box">
+
+<p>
+Hello! My name is <b>Sachin</b>. I am a passionate Web Developer who loves
+creating modern, fast and responsive websites. I focus on clean design,
+smooth animations and great user experience.
+</p>
+
+
+<div class="stats">
+
+<div>
+<h2>20+</h2>
+<p>Projects</p>
+</div>
+
+<div>
+<h2>2+</h2>
+<p>Experience</p>
+</div>
+
+<div>
+<h2>100%</h2>
+<p>Dedication</p>
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- SKILLS SECTION -->
+
+
+<section id="skills">
+
+
+<div class="section-title">
+
+<h1>My Skills</h1>
+
+</div>
+
+
+
+<div class="skills-container">
+
+
+<div class="glass skill-card">
+
+<h3>HTML</h3>
+
+<div class="progress">
+
+<span style="width:95%"></span>
+
+</div>
+
+</div>
+
+
+
+<div class="glass skill-card">
+
+<h3>CSS</h3>
+
+<div class="progress">
+
+<span style="width:90%"></span>
+
+</div>
+
+</div>
+
+
+
+<div class="glass skill-card">
+
+<h3>JavaScript</h3>
+
+<div class="progress">
+
+<span style="width:85%"></span>
+
+</div>
+
+</div>
+
+
+
+<div class="glass skill-card">
+
+<h3>React</h3>
+
+<div class="progress">
+
+<span style="width:80%"></span>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- PROJECT SECTION -->
+
+
+<section id="projects">
+
+
+<div class="section-title">
+
+<h1>My Projects</h1>
+
+</div>
+
+
+
+<div class="project-container">
+
+
+
+<div class="glass project-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h2>Portfolio Website</h2>
+
+<p>
+A modern personal portfolio website with animations and responsive design.
+</p>
+
+<a href="#">View Project</a>
+
+</div>
+
+
+
+
+
+<div class="glass project-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h2>Weather App</h2>
+
+<p>
+Weather application using API and modern user interface.
+</p>
+
+<a href="#">View Project</a>
+
+</div>
+
+
+
+
+
+
+<div class="glass project-card">
+
+<i class="fa-solid fa-list-check"></i>
+
+<h2>Todo App</h2>
+
+<p>
+Task management application with clean and simple design.
+</p>
+
+<a href="#">View Project</a>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- CONTACT SECTION -->
+
+
+<section id="contact">
+
+
+<div class="section-title">
+
+<h1>Contact Me</h1>
+
+</div>
+
+
+
+
+<div class="contact-box glass">
+
+
+<form>
+
+
+<input type="text" placeholder="Your Name">
+
+
+<input type="email" placeholder="Your Email">
+
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+
+<button>
+Send Message
+</button>
+
+
+</form>
+
+
+
+<div class="contact-info">
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+sachin@example.com
+</p>
+
+
+<p>
+<i class="fa-solid fa-phone"></i>
++91 9876543210
+</p>
+
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+India
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Sachin | Premium Portfolio
+</p>
+
+</footer>
+<style>
+
+/* Section Heading */
+
+.section-title{
+    text-align:center;
+    margin:60px 0 40px;
+}
+
+.section-title h1{
+    font-size:45px;
+    color:#00eaff;
+}
+
+
+/* Glass Cards */
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    backdrop-filter:blur(20px);
+    border-radius:20px;
+    transition:.4s;
+}
+
+.glass:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(0,234,255,.3);
+}
+
+
+/* About */
+
+.about-box{
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+}
+
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:40px;
+}
+
+
+.stats h2{
+    color:#00eaff;
+    font-size:35px;
+}
+
+
+/* Skills */
+
+.skills-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+
+.skill-card{
+
+    padding:30px;
+
+}
+
+
+.progress{
+
+    height:10px;
+    background:#1e293b;
+    border-radius:20px;
+    margin-top:15px;
+
+}
+
+
+.progress span{
+
+    display:block;
+    height:100%;
+    background:linear-gradient(90deg,#00eaff,#8b5cf6);
+    border-radius:20px;
+
+}
+
+
+
+/* Projects */
+
+.project-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+
+}
+
+
+.project-card{
+
+    padding:30px;
+
+}
+
+
+.project-card i{
+
+    color:#00eaff;
+    font-size:40px;
+
+}
+
+
+.project-card a{
+
+    color:#00eaff;
+    text-decoration:none;
+
+}
+
+
+
+/* Contact */
+
+.contact-box{
+
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+
+}
+
+
+input,textarea{
+
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+
+    background:#111827;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+}
+
+
+button{
+
+    width:100%;
+    padding:15px;
+
+    border:none;
+    border-radius:30px;
+
+    background:#00eaff;
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+    padding:30px;
+    background:#020617;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+.hero-text h1{
+
+    font-size:50px;
+
+}
+
+
+.stats{
+
+    flex-direction:column;
+
+}
+
+
+nav ul{
+
+    display:none;
+
+}
+
+}
+
+</style>
+
+
+
+<script>
+
+
+// Typing Effect
+
+let words=[
+"Web Developer",
+"Frontend Developer",
+"UI Designer",
+"Freelancer"
+];
+
+
+let i=0;
+let j=0;
+let current="";
+
+
+function typing(){
+
+if(j < words[i].length){
+
+current += words[i][j];
+
+document.getElementById("typing").innerHTML=current;
+
+j++;
+
+setTimeout(typing,100);
+
+}
+
+else{
+
+setTimeout(remove,1200);
+
+}
+
+}
+
+
+function remove(){
+
+if(j>0){
+
+current=current.substring(0,j-1);
+
+document.getElementById("typing").innerHTML=current;
+
+j--;
+
+setTimeout(remove,60);
+
+}
+
+else{
+
+i++;
+
+if(i>=words.length){
+
+i=0;
+
+}
+
+setTimeout(typing,300);
+
+}
+
+}
+
+
+typing();
+
+
+
+
+// Scroll Reveal Animation
+
+let elements=document.querySelectorAll(".glass");
+
+
+window.addEventListener("scroll",()=>{
+
+
+elements.forEach(el=>{
+
+
+let top=el.getBoundingClientRect().top;
+
+
+if(top < window.innerHeight-100){
+
+el.style.opacity="1";
+el.style.transform="translateY(0)";
+
+}
+
+
+});
+
+
+});
+
+
+elements.forEach(el=>{
+
+el.style.opacity="0";
+el.style.transform="translateY(40px)";
+el.style.transition="0.8s";
+
+});
+
+
+</script>
